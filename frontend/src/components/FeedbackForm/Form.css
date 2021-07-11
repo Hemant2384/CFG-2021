@@ -1,0 +1,437 @@
+.body{
+  background-color:wheat;
+}
+.form-container {
+    margin: 216px auto;
+    width: 1144px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    border-radius: 10px;
+    height: 693px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    font-size: 1.5rem;
+    z-index: 1;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .form-content-left {
+    background:#4B59F7;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+  }
+  
+  .form-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+ .wel{
+    display: none;
+    margin-top: 143px;
+    margin-bottom: -127px;
+     display: grid;
+     place-content: center;
+     text-align: center;
+     font-size: 83px;
+     position: relative;
+     font-family: 'Source Code Pro', monospace;
+     position: relative;
+  }
+  .wel::before,
+  .wel::after {
+   content: ' ';
+   position:absolute;
+   top: 0;
+   right: 28%;
+   bottom: 0;
+   left:28%;
+  } 
+  .wel::before {
+    background: white;
+    animation: typewriter 6s steps(21) forwards;
+  }
+  .wel::after{
+    width: 0.125em;
+    background: black;
+    animation : typewriter 6s steps(21) forwards, blinks 750ms steps(21) infinite;
+  }  
+  @keyframes typewriter {
+    to{
+      left: 76%;
+    }
+  } 
+  @keyframes blinks {
+    to{
+      background: transparent;
+    }
+  }
+  .form-img-2 {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .form-success {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 80px;
+    color: #fff;
+  }
+  
+  .form-content-right {
+    margin-right: 605px;
+     margin-top: 305px;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    font-size: 25px;
+  }
+  
+  .form-content-right1 {
+    margin-left: 25px;
+    margin-top: 304px;
+   border-radius: 0 10px 10px 0;
+   position: relative;
+   font-size: 25px;
+ }
+ .form-content-right2 {
+  margin-left: 21px;
+  margin-top: 338px;
+ border-radius: 0 10px 10px 0;
+ position: relative;
+ font-size: 25px;
+}
+  #confirm{
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 126%;
+    height: 135%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form h1 {
+    font-size: 23px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 1rem;
+    color:black;
+  }
+  
+  .form-inputs {
+    margin-bottom: 13px;
+    width: 22%;
+  }
+  .form-inputs1 {
+    margin-bottom: 0px;
+    width: 22%;
+  }
+  
+  .form-inputs p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #f00e0e;
+  }
+  
+  .form-label {
+    display: inline-block;
+    font-size: 19px;
+    margin-bottom: 7px;
+    color:black;
+  }
+  
+  .form-input {
+    border: 2px solid;
+    font-size: 18px;
+    display: block;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 2px;
+    height: 37px;
+    width: 100%;
+
+  }
+  #vol{
+    padding-top: 320px;
+  }
+
+  
+  .form-input::placeholder {
+    color: #595959;
+    font-size: 18px;
+  }
+  
+  .form-input-btn {
+    width: 22%;
+    height: 46px;
+    padding-bottom: 24px;
+  padding-top: 8px;
+    margin-top: 15px;
+    border-radius: 2px;
+    background: #4B59F7;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+  }
+  .bg{
+    margin-left: 14px;
+    width: 91px;
+    height: 36px;
+    margin-top: 18px;
+  }
+  .bg1{
+    font-size: 15px;
+    margin-top: 24px;
+    margin-left: 14px;
+    width: 234px;
+    height: 34px;
+  }
+  .form-input-btn1 {
+
+    width: 22%;
+    height: 46px;
+    padding-bottom: 24px;
+  padding-top: 8px;
+    margin-top: 15px;
+    border-radius: 2px;
+    background: #4B59F7;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+  }
+  
+  .form-input-btn:hover {
+    cursor: pointer;
+
+    background:#4B59F7;
+    transition: all 0.4s ease-out;
+  }
+  .form-input-btn1:hover {
+    cursor: pointer;
+
+    background:#4B59F7;
+    transition: all 0.4s ease-out;
+  }
+  
+  .form-input-login {
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-top: 24px;
+    color:black;
+    width: 22%;
+    text-align: center;
+  }
+ 
+  
+  .form-input-login a {
+    text-decoration: none;
+    color: #27cdff;
+    font-weight: 600;
+  }
+  .nav-item-active{
+         font-size: 23px;
+         font-weight: bolder;
+  }
+  .nav-item{
+    font-size: 23px;
+    font-weight: bolder;
+  }
+  
+  .btn-btn-danger-ml-auto{
+    font-size: 18px;
+    width: 92px;
+    background-color: rgb(233, 53, 53);
+    border-radius: 10px;
+    margin-right: 1652px;
+  }
+  .searchbar{
+    width: 290px;
+  }
+  .searchbar::placeholder{
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  #glitched{
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    cursor:pointer;
+    margin-left: 1058px;
+    margin-top: 20px;
+    text-shadow: 0.05em 0 0 rgba(255,0,0,0.75),
+    -0.025em -0.05em 0 rgba(0,255,0,0.75),
+    0.025em 0.05em 0 rgba(0,0,255,0.75);
+    animation: glitch 500ms infinite;
+  }
+  @keyframes glitch {
+    0%{
+      text-shadow: 0.05em 0 0 rgba(255,0,0,0.75),
+      -0.025em -0.05em 0 rgba(0,255,0,0.75),
+      0.025em 0.05em 0 rgba(0,0,255,0.75);
+    }
+    14%{
+      text-shadow: 0.05em 0 0 rgba(255,0,0,0.75),
+      -0.025em -0.05em 0 rgba(0,255,0,0.75),
+      0.025em 0.05em 0 rgba(0,0,255,0.75);
+    }
+    
+    15%{
+      text-shadow: -0.025em -0.05em 0 rgba(255,0,0,0.75),
+      0.025em 0.025em 0 rgba(0,255,0,0.75),
+      -0.05em -0.05em 0 rgba(0,0,255,0.75);
+    }
+    49%{
+      text-shadow: -0.025em -0.05em 0 rgba(255,0,0,0.75),
+      0.025em 0.025em 0 rgba(0,255,0,0.75),
+      -0.05em -0.05em 0 rgba(0,0,255,0.75);
+    }
+    50%{
+      text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.75),
+      0.05em 0 0 rgba(0,255,0,0.75),
+       0 -0.05em 0 rgba(0,0,255,0.75);
+    }
+    99%{
+      text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.75),
+      0.05em 0 0 rgba(0,255,0,0.75),
+       0 -0.05em 0 rgba(0,0,255,0.75);
+    }
+    100%{
+      text-shadow: -0.025em 0 0 rgba(255,0,0,0.75),
+      -0.025em -0.025em 0 rgba(0,255,0,0.75),
+      -0.025em -0.05em 0 rgba(0,0,255,0.75);
+    }  
+}
+.title{
+  margin-top: 105px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24%;
+  font-size: 30px;
+}
+.user{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24%;
+  font-size: 30px;
+}
+.title1{
+  margin-top: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24%;
+  font-size: 30px;
+}
+.createpost{
+  height: 300px;
+  margin-top: 17px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24%;
+  font-size: 30px;
+}
+#choose{
+  margin-top: 9px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 23%;
+  font-size: 22px;
+}
+#upload{
+  margin-top: 34px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+  font-size: 22px;
+  transition: width ;
+}
+#upload:hover{
+   width: 5.2%;
+   font-size: 24px;
+   border-radius: 10px;
+}
+#header{
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-electronic-technology-website-texture-background-banner-image_156039.jpg");
+    background-repeat: no-repeat;
+    height: 648px;
+    /* opacity: 1.5; */
+    background-size: 100%;
+}
+.navbar-brand{
+  color: white;
+    margin-top: -579px;
+}
+.navbar-toggler{
+  width: 46px;
+}
+.nav-link{
+  color: white;
+}
+#navbarNav{
+  margin-top: -579px;
+}
+#mainhead{
+  margin-left: 683px;
+  font-size: 67px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 37px;
+}
+
+.about-us-contents{
+  align-items: center;
+  place-content: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  
+}
+#maincontents{
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width:1236px){
+    .form-inputs{
+      width:40%;
+    }
+}
+@media (max-width:353px){
+  .form-content-right{
+    margin-right: -93px;
+     margin-top: 343px;
+}
+.form{
+  margin-left: -46px;
+}
+
+}

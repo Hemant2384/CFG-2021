@@ -1,0 +1,145 @@
+  /* made this so i could visually center the shapes */
+
+  #backgroundplaceholder{
+    /* background-color: black;  */
+  background-color: white; 
+  padding: 0em;
+      margin-left: 0%;
+      margin-top: 0%;
+  width:20%;
+  height:30%;
+}
+/* the button's base size, shape, appearance */
+#playPauseButton{
+position: relative;
+/* the button's background color */
+background: #fff; 
+border: none;
+outline:none;
+height: 5em;
+width: 5em;
+font-size: 2em; 
+box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+cursor:pointer;
+ /* the button's a circle */ 
+  -moz-border-radius: 5em;
+  -webkit-border-radius: 5em;
+  border-radius: 5em;
+
+}
+
+#playPauseButton:focus{
+outline:none;
+}
+
+/* the button's top layer: size, shape, appearance */
+#playPauseButton:before {
+content: "";
+position: absolute;
+top: 1.5em;
+ /* for visual centering */
+left: 1.67em;
+height: 0;
+border-style: solid;
+border-width: 1em 0 1em 2em;
+/* create shape with color */
+border-color: transparent transparent transparent #e52d27; 
+transition: .218s ease;
+}
+
+#playPauseButton:hover:before {
+height: 2em;
+border-width: 0 0 0 2em;
+}
+
+/* the button's mouseover/click/hover layer: size, shape, appearance */
+#playPauseButton:after {
+content: "";
+position: absolute;
+background: inherit;
+width: 0;
+height: 2em;
+top: 1.5em;
+ /* for visual centering */
+left: 2.42em;
+transition: .218s ease;
+}
+
+#playPauseButton:hover:after {
+width: .5em;
+}
+
+
+
+.thumb {
+    display: inline-block;
+    width: 128px;
+    height: 128px;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .thumb:before, .thumb:after {
+    position: absolute;
+    box-sizing: border-box;
+    display: block;
+    content: " ";
+    transition: all 0.3s ease;
+  }
+  .thumb:before {
+    background: rgba(0, 0, 0, 0.7);
+    top: 32px;
+    left: 32px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+  .thumb:after {
+    top: 48px;
+    left: 57.6px;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-top-width: 16px;
+    border-bottom-width: 16px;
+    border-left-width: 19.2px;
+    border-left-color: rgba(255, 255, 255, 0.9);
+  }
+  .thumb:hover:before, .thumb:hover:after {
+    transform: scale(1.05);
+  }
+  .thumb:hover:before {
+    background: black;
+  }
+  .thumb.active:after {
+    width: 20.8px;
+    height: 26.4px;
+    top: 50.8px;
+    left: 53.6px;
+    border-width: 0 7.2727272727px;
+    border-color: rgba(255, 255, 255, 0.9);
+    -webkit-animation: spin 3.636363s linear infinite;
+    animation: spin 3.636363s linear infinite;
+  }
+  .thumb.active:hover:after {
+    -webkit-animation: none;
+    animation: none;
+  }
+  
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

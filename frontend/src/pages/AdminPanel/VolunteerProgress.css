@@ -1,0 +1,48 @@
+.VolunteerProgress{
+    height: 80vh;
+    width: 80vh;
+    margin: auto;
+}
+#one{
+    background-color: #4B59F7;
+    margin-left: 20%;
+    color: black;
+}
+
+#two{
+    background-color: #4B59F7;
+    color: black;
+    
+}
+
+#one:hover{
+    color: white;
+}
+#two:hover{
+    color: white;
+}
+
+#profile-id{
+    margin-left: 30%;
+
+}
+
+.profile h1{
+    margin-left: 25%;
+    margin-top:5%;
+
+}
+
+#data-para{
+    margin-left: 30%;
+
+}
+
+.buttons3{
+    margin-top: 5%;
+    margin-left: 28%;
+}
+
+.btns3{
+    margin-left: 1px;
+}
